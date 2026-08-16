@@ -1,14 +1,15 @@
-import Section from "./components/Section";
+import MainContent from "./components/MainContent";
 
 export default function App() {
-  return (
-    <div className="min-h-screen flex justify-center bg-blue-950">
-      <div className="p-6 gap-y-6 flex flex-col justify-start w-[80%] lg:w-[70%]">
-        <h1 className="w-full p-6 bg-amber-100 font-extrabold">
-          React App Starter
-        </h1>
-        <Section></Section>
-      </div>
-    </div>
-  );
+    return (
+        <div className="flex flex-col min-h-screen bg-blue-400">
+            <header className="bg-emerald-500 py-4 text-center">
+                <h1>HEADER</h1>
+            </header>
+            <MainContent></MainContent>
+            <footer className="bg-slate-700 py-4 text-center text-white">
+                <h2>FOOTER</h2>
+            </footer>
+        </div>
+    );
 }
